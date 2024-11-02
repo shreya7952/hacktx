@@ -96,7 +96,7 @@ document.getElementById('startButton').addEventListener('click', () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer Ysk-proj-NhehM8iXitsj6O8eHJUMixgRKZdyL3Mu2vLy-ggoinHGmu4DXWuzXYRUKypq8Y0532UAG2tbdgT3BlbkFJKEU2v9S0-IWpot5XVo3_SiLguEqzVOa4z5Mnwgy3-0RbHlvitKN2366PUcUzo8PXoGUNqXpo8A`
+          'Authorization': `Bearer YOUR API KEY`
         },
         body: JSON.stringify({
           model: "gpt-3.5-turbo",
