@@ -1,0 +1,57 @@
+
+html, body 
+{
+    height: 100%;
+    margin: 0;
+    overflow: hidden; 
+}
+.game
+{
+    background-image: url("background.png");
+    background-position: center;
+    background-size: cover; 
+    height: 100vh; 
+    width: 100vw;  
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: hidden; 
+    font-family: 'Pixelify Sans', sans-serif; 
+}
+
+
+h1
+{
+    color: red; 
+    margin-bottom: 20px; 
+}
+
+button 
+{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0px;
+}
+
+button:hover 
+{
+    background-color: #0056b3; 
+}
+
+button:disabled 
+{
+    background-color: #cccccc; 
+    cursor: not-allowed;
+}
+
+canvas 
+{
+    margin-top:0px;
+}
