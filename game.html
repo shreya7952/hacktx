@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="home-page">
+        <div class="star-arch">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+        <img src="tvlogo.png" width="150" height="150">
+        <h1 class="neon-text">Welcome to Atari Hackout</h1>
+        <a href="file:///C:/Users/logan/OneDrive/Documents/testing%20atari/index.html" class="neon-button">Press Start</a>
+    </div>
+
+    <!-- Input Form for Definitions and Answers -->
+    <div id="input-form" style="display: none;">
+        <h2>Enter Definitions and Answers</h2>
+        <form id="questionForm">
+            <div id="qa-fields">
+                <input type="text" placeholder="Definition" class="definition">
+                <input type="text" placeholder="Answer" class="answer">
+            </div>
+            <button type="button" onclick="addQAFields()">Add More</button>
+            <button type="button" onclick="startGame()">Play</button>
+        </form>
+    </div>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" width="800" height="600" style="display: none;"></canvas>
+
+    <script src="ataribreakout.js"></script>
+</body>
+
+</html>

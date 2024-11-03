@@ -1,0 +1,86 @@
+/* Load custom pixel font */
+@font-face
+{
+    font-family: "Pixelify Sans";
+    src: url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+}
+
+/* Apply pixel font and center text in body */
+body {
+    text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Style the homepage section */
+#home-page {
+    margin-top: 10%;
+}
+
+/* Style the game canvas with borders and background */
+#gameCanvas {
+    background-color: black;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+/* Neon button styling */
+.neon-button {
+    padding: 10px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ffffff;
+    background: none;
+    border: 2px solid #ff00ff;
+    border-radius: 5px;
+    font-family:"Pixelify Sans",sans-serif;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ff00ff,
+        0 0 30px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 50px #ff00ff,
+        0 0 60px #ff00ff;
+    transition: 0.2s;
+}
+
+.neon-button:hover
+ {
+    color: #ffffff; 
+    background: none; 
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff inset;
+}
+.star-arch {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Adjust space between stars and heading */
+}
+
+.star {
+    font-size: 2em; 
+    color: #ff00ff; 
+   text-shadow:#ff00ff;
+    transform: translateY(-10px); 
+}
+
+.star:nth-child(1) {
+    transform: translate(-30px, -10px); /* Position first star */
+}
+
+.star:nth-child(2) {
+    transform: translate(0, -20px); /* Position second star higher */
+}
+
+.star:nth-child(3) {
+    transform: translate(30px, -10px); /* Position third star */
+}
+.tvlogo {
+    display: block; 
+    margin: 10px auto; 
+    width: 50px; 
+    height: auto; 
+}
+

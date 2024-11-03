@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atari Breakout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+            font-family: 'Press Start 2P', cursive;
+            color: #fff;
+        }
+        #gameCanvas {
+            border: 3px solid #ff00ff;
+            display: block;
+            background-color: #000;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2em;
+            color: #ff00ff;
+        }
+        #score {
+            font-size: 1.5em;
+            color: #fff;
+        }
+      
+    </style>
+  
+</head>
+<body>
+    <h1>Atari Breakout</h1>
+    <canvas id="gameCanvas" width="500" height="500"></canvas>
+    <h2 id="score">Score: 0</h2>
+    <button id="tryAgainButton" 
+        style="display: none; 
+               position: fixed; 
+               top: 50%; 
+               left: 50%; 
+               transform: translate(-50%, -50%); 
+               font-family: 'Press Start 2P', cursive; 
+               padding: 10px 20px; 
+               background-color: #ff00ff; 
+               color: #ffffff; 
+               border: none; 
+               border-radius: 5px; 
+               cursor: pointer; 
+               font-size: 20px;">Try Again</button>
+    <script src="ataribreakout.js"></script>
+</body>
+</html>
